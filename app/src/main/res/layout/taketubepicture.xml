@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/taketubepicture"
+    android:orientation="vertical"
+    android:background="@drawable/background_final"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:contentDescription="ok"
+        android:id="@+id/im"
+        />
+
+    <com.example.flappyw.TubeDrawingView
+        android:id="@+id/rechteckView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/TableRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/im">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Lin">
+
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="camera"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/kruemmung"
+            />
+            <Button
+                android:id="@+id/GaleryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Galery"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@drawable/kruemmung"
+                />
+            <Button
+                android:id="@+id/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="scale"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="@drawable/kruemmung"
+                />
+        <Button
+            android:id="@+id/FinishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="finish"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:background="@drawable/kruemmung"
+            />
+
+         </LinearLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="ok2"
+            android:id="@+id/im2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

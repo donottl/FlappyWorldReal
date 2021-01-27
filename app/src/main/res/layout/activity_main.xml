@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:fillAfter="true"
+    android:fromAlpha="1.0"
+    android:toAlpha="0.0"
+    android:duration="500"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_final"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/wood_back"
+        android:gravity="center"
+        android:id="@+id/mainhigh"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="Highscore:">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/buttonstart"
+        android:layout_width="350dp"
+        android:src="@drawable/sttart"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:scaleType="fitCenter"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00000000"
+        android:onClick="startGame"
+        android:layout_marginTop="180dp"
+        />
+
+    <Button
+        android:id="@+id/CreateButton"
+        android:layout_marginTop="40dp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Select Objekts"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kruemmung"
+        android:layout_below="@id/buttonstart"/>
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Select Audio"
+        android:onClick="startSound"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kruemmung"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/CreateButton"/>
+</RelativeLayout>

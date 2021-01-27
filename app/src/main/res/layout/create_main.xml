@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_final">
+
+    <TextView
+
+
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/wood_back"
+        android:gravity="center"
+        android:text="Custom Objekts"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/TubeButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/kruemmung"
+        android:scaleType="fitCenter"
+        android:text="Tube"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/CharackterButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TubeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kruemmung"
+        android:scaleType="fitCenter"
+        android:text="Charackter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TubeButton" />
+
+    <Button
+        android:id="@+id/BackgroundButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CharackterButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kruemmung"
+        android:scaleType="fitCenter"
+        android:text="Background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CharackterButton" />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wood_back"
+        android:gravity="center"
+        android:text="Default Objekts"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/DefaultTubeButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/kruemmung1"
+        android:scaleType="fitCenter"
+        android:text="Tube"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <Button
+        android:id="@+id/DefaultCharackterButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DefaultTubeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kruemmung1"
+        android:scaleType="fitCenter"
+        android:text="Charakter"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DefaultTubeButton" />
+
+    <Button
+        android:id="@+id/DefaultBackgroundButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/kruemmung1"
+        android:scaleType="fitCenter"
+        android:text="Background"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DefaultCharackterButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00000000"
+        android:onClick="back"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backbttn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

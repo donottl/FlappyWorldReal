@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_final"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/gameover"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gameover"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Score:"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/gameover"
+        android:id="@+id/score"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+
+        android:text="Best:"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#8B4513"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/score"
+        android:id="@+id/highscore"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/scorevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        android:layout_below="@id/gameover"
+        android:layout_toRightOf="@id/score"
+        android:layout_marginLeft="30sp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:id="@+id/highscorevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/score"
+        android:layout_toRightOf="@id/score"
+        android:layout_marginLeft="30sp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#8B4513">
+
+    </TextView>
+
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:onClick="restartGame"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/kruemmung"
+        android:textSize="30sp"
+        android:layout_below="@id/highscore"/>
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/button4"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="backtomain"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/kruemmung"
+        android:textSize="30sp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@id/highscore"/>
+
+
+
+
+</RelativeLayout>
